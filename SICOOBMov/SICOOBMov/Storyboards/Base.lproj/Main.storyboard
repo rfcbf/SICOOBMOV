@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController storyboardIdentifier="principal" modalPresentationStyle="fullScreen" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mim-XE-vJG"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cBf-8T-TI7" kind="relationship" relationship="viewControllers" id="vxb-3b-LVy"/>
+                        <segue destination="Y3j-db-zuk" kind="relationship" relationship="viewControllers" id="bTR-au-Pc4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1586" y="195"/>
+        </scene>
+        <!--favoritos-->
+        <scene sceneID="VQ0-fs-0jm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favoritos" referencedIdentifier="favoritos" id="Y3j-db-zuk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="EdQ-x2-epZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VpL-VE-0hY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1368" y="613"/>
+        </scene>
+        <!--filmes-->
+        <scene sceneID="ccv-tc-COI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Filmes" referencedIdentifier="filmes" id="cBf-8T-TI7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5cG-dt-7DH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSh-Fb-ENw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1797" y="613"/>
+        </scene>
+    </scenes>
+</document>

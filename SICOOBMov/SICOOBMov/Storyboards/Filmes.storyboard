@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Filmes-->
+        <scene sceneID="Zq9-Zi-0ed">
+            <objects>
+                <viewController title="Filmes" id="dpF-28-bgP" customClass="FilmesViewController" customModule="SICOOBMov" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sfh-fh-6OA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67Q-fa-hRv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.14997999370000001" green="0.68326997759999997" blue="0.61711001399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="Grj-IO-Bfe">
+                                    <size key="itemSize" width="162" height="270"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <containerView key="backgroundView" opaque="NO" contentMode="scaleToFill" id="z9x-1S-EFF">
+                                    <rect key="frame" x="0.0" y="-88" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                </containerView>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellFilmes" id="esh-ga-dY3" customClass="FilmesCollectionViewCell" customModule="SICOOBMov" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="162" height="270"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VZW-Gc-rZf">
+                                            <rect key="frame" x="0.0" y="0.0" width="162" height="270"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEx-YO-lfc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="162" height="270"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <view alpha="0.85000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2JR-tI-rOh">
+                                                    <rect key="frame" x="0.0" y="223" width="162" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7Rd-gN-IZ5">
+                                                            <rect key="frame" x="8" y="8" width="146" height="31"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <color key="textColor" red="0.74558997149999995" green="0.84213000540000005" blue="0.18526999650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.025469999760000001" green="0.2123800069" blue="0.2569000125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                                <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hmp-BZ-MEf">
+                                                    <rect key="frame" x="115" y="0.0" width="47" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imc-lv-6lR">
+                                                            <rect key="frame" x="4" y="5" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                            <state key="normal" image="favorite_gray">
+                                                                <color key="titleShadowColor" red="0.15886801480000001" green="0.17301428320000001" blue="0.25401523710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="btnFavoritar:" destination="esh-ga-dY3" eventType="touchUpInside" id="Ad0-of-t66"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.025469999760000001" green="0.2123800069" blue="0.2569000125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnFavorito" destination="imc-lv-6lR" id="Gx5-9V-xyR"/>
+                                            <outlet property="imagem" destination="dEx-YO-lfc" id="u6b-dt-Sjc"/>
+                                            <outlet property="lblNome" destination="7Rd-gN-IZ5" id="Em9-AZ-Kh1"/>
+                                            <outlet property="viewFavorito" destination="Hmp-BZ-MEf" id="rTM-6N-ZpE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="dpF-28-bgP" id="myZ-1R-nvZ"/>
+                                    <outlet property="delegate" destination="dpF-28-bgP" id="Piq-9H-LFd"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14997999370000001" green="0.68326997759999997" blue="0.61711001399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="67Q-fa-hRv" secondAttribute="bottom" id="9z7-ku-jDs"/>
+                            <constraint firstItem="67Q-fa-hRv" firstAttribute="leading" secondItem="0W2-oW-MaK" secondAttribute="leading" id="KD0-gR-qxe"/>
+                            <constraint firstItem="67Q-fa-hRv" firstAttribute="trailing" secondItem="0W2-oW-MaK" secondAttribute="trailing" id="ftW-ys-wq3"/>
+                            <constraint firstItem="67Q-fa-hRv" firstAttribute="top" secondItem="Sfh-fh-6OA" secondAttribute="top" id="tyt-NY-H6f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0W2-oW-MaK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filmes" id="btc-Q4-Ibd"/>
+                    <connections>
+                        <outlet property="collection" destination="67Q-fa-hRv" id="Lpl-Sa-Lir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qld-ih-j5e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576.79999999999995" y="-403.44827586206901"/>
+        </scene>
+        <!--Filmes-->
+        <scene sceneID="9yr-Ni-Xkr">
+            <objects>
+                <navigationController storyboardIdentifier="filmes" title="Filmes" automaticallyAdjustsScrollViewInsets="NO" id="Byi-XB-cqQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Filmes" image="list" id="AyU-0H-7gp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FZh-0g-R6R">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dpF-28-bgP" kind="relationship" relationship="rootViewController" id="lbr-g8-2ra"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UkO-uT-eaZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="-403"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="favorite_gray" width="17" height="16"/>
+        <image name="list" width="18" height="10"/>
+    </resources>
+</document>

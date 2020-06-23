@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F83c" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Favoritos" representedClassName="Favoritos" syncable="YES" codeGenerationType="class">
+        <attribute name="adulto" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="ano" optional="YES" attributeType="String"/>
+        <attribute name="descricao" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imagemFundo" optional="YES" attributeType="String"/>
+        <attribute name="linguagemOriginal" optional="YES" attributeType="String"/>
+        <attribute name="mediaVoto" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="popularidade" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="poster" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="totalVotos" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Favoritos" positionX="-63" positionY="-18" width="128" height="208"/>
+    </elements>
+</model>
